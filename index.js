@@ -1,4 +1,3 @@
-/*created by Benedict*/
 window.onload = function (){
     const quotes = [
        {
