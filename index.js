@@ -1,4 +1,3 @@
-/*created by Benedict*/
 window.onload = function (){
     const quotes = [
        {
@@ -59,6 +58,7 @@ window.onload = function (){
     }
     
     setInterval (displayQuotes, 7500);
+<<<<<<< HEAD
 
     const img = document.querySelector('#img');
     const images = [
@@ -126,3 +126,6 @@ window.onload = function (){
 
     // setInterval(slider, 2000);
     }
+=======
+    }
+>>>>>>> 02d8bb91d24464df27be8e9e4a92a1529ac239a8
