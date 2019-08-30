@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    width: 100vw;
+    height: 70vh;
+    /* margin: 20px auto; */
+    /* box-shadow: 5px 5px 10px grey; */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.slider-color {
+    background: rgba(230, 126, 34, .5);
+    position: relative;
+}
+
+.slider-color img {
+    height: 70vh;
+    width: 100%;
+    transition: 2s ease;
+    background: rgba(230, 126, 34, .5);
+}
+
+.slider-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bottom: 0;
+    right: 0; */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    /* animation: img1;
+    animation-delay: 0s;
+    animation-duration: .1s;
+    animation-timing-function: ease-in; */
+    
+}
+
+.slider-details h1 {
+    font-size: 65px;
+    padding: 0 0 20px 0;
+    font-feature-settings: 'pnum' on, 'onum' on;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    line-height: 100px;
+}
+
+.slider-details h3 {
+    font-size: 48px;
+    padding: 20px 0 20px 0;
+    font-feature-settings: 'pnum' on, 'onum' on;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    line-height: 100px;
+    font-weight: lighter;
+}
+
+.slider-details a {
+    padding: 10px 40px;
+    background: rgba(230, 126, 34, 0.4);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+    border: 5px solid #E67E22;
+    margin:  20px 0 20px 0;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    line-height: 120px;
+    transition: .5s;
+}
+
+.slider-details a:hover {
+    background: rgba(230, 126, 34, .8);
+    cursor: pointer;
+}
+
+#img-slide-0 {
+    animation: img1;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+#img-slide-1 {
+    animation: img2;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+#img-slide-2 {
+    animation: img3;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes img1 {
+    0% {
+        transform: scale(1.2);
+        opacity: .5;
+    }
+
+    50% {
+        /* transform: scale(1); */
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: .8;
+    }
+}
+
+@keyframes img2 {
+    0% {
+        transform: scale(1);
+        opacity: .5;
+    }
+
+    50% {
+        /* transform: scale(1); */
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: .8;
+    }
+}
+
+@keyframes img3 {
+    0% {
+        transform: scale(1.2);
+        opacity: .5;
+    }
+
+    50% {
+        /* transform: scale(1); */
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: .8;
+    }
+}
+ 

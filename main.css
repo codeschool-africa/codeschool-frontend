@@ -21,10 +21,10 @@ button:focus {
 
 header {
     background: #E67E22;
-    box-shadow: 0px 6px 4px rgba(51, 51, 51, 0.25);
+    box-shadow: 4px 6px 4px rgba(51, 51, 51, 0.25);
     z-index: 100;
     width: 100vw;
-    height: 70px;
+    height: 90px;
 }
 
 header nav {
@@ -250,7 +250,7 @@ header ul li a:hover {
 }
 
 .bg-slider-image {
-    background-image: url(./images/bgp.jpg);
+    /* background-image: url(./images/bgp.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,6 +306,7 @@ header ul li a:hover {
     position: absolute;
     top: 50%;
     bottom: 50%;
+    transform: translate(-50%,-50%);
 
     cursor: pointer;
     /* font-size: 120px; */
@@ -491,3 +492,78 @@ footer .footer-bottom img {
     margin-right: 20px;
 }
 
+/* sample slider with html css */
+
+/* .slidershow {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.navigator {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+input[name='r'] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.bar:hover {
+    background: #fff;
+}
+
+.slides {
+    width: 300vw;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 100vw;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -100vw;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -200vw;
+}
+
+#r1:checked ~ .bar.bar1 {
+    background: #fff;
+}
+
+#r2:checked ~ .bar.bar2 {
+    background: #fff;
+}
+
+#r3:checked ~ .bar3 {
+    background: #fff;
+} */

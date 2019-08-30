@@ -31,31 +31,19 @@ window.onload = function (){
        }
     ];
 
-    const backgroundDetails = [
-        {
-            image:"./images/bg-image.png",
-            h1: "heading 1",
-            h3: "subheading 1",
-            a: "#"
-        },
-        {
-            image:"./images/bg-image.png",
-            h1: "heading 2",
-            h3: "subheading 2",
-            a: "#"
-        },
-        {
-            image:"./images/bg-image.png",
-            h1: "heading 3",
-            h3: "subheading 3",
-            a: "#"
-        }
-    ]
     let x = Math.floor(Math.random()*quotes.length);
 
     const blockQuote = document.querySelector("#quote");
 
     const cite = document.querySelector("#cite");
+
+    // const heading = document.querySelector('#heading');
+
+    // const subHeading = document.querySelector('#subheading');
+
+    // const sliderLink = document.querySelector('#slider-link');
+
+    // const bgSliderImage = document.querySelector('#bg-slider-image');
 
     blockQuote.innerHTML = quotes[x].quote;
 
@@ -71,4 +59,70 @@ window.onload = function (){
     }
     
     setInterval (displayQuotes, 7500);
+
+    const img = document.querySelector('#img');
+    const images = [
+        {
+            image: "./images/bgp-2.jpg",
+            h1: 'service one',
+            h3: 'subheading service one',
+            src: '#'
+        },
+        {
+            image: "./images/bgp.jpg",
+            h1: 'service two',
+            h3: 'subheading service two',
+            src: '#'
+        }
+    ]
+    
+    let a = 0;
+    
+    const slide = () => {
+        if(a < images.length) {
+            a++;
+        } else {
+            a = 1;
+        }
+    
+        img.innerHTML = `<div class="slider-color">
+            <img src='${images[a-1].image}' id='img-slide-${a-1}'>
+            <div class="slider-details">
+                <h1>${images[a-1].h1}</h1>
+                <h3>${images[a-1].h3}</h3>
+                <a href="${images[a-1].src}">Learn more</a>
+            </div>
+        </div>`
+    }
+    
+    setInterval(slide, 5000);
+
+    // heading.innerHTML = backgroundDetails[0].h1;
+
+    //     subHeading.innerHTML = backgroundDetails[0].h3;
+
+    //     sliderLink.href = backgroundDetails[0].a;
+
+    //     bgSliderImage.style.backgroundImage = `url(${backgroundDetails[0].image})`;
+
+    // const slider = () => {
+    //     let x = 0;
+
+    //     if(x < backgroundDetails.length) {
+    //         x++;
+    //     } else {
+    //         x = 0;
+    //     }
+
+    //     heading.innerHTML = backgroundDetails[x].h1;
+
+    //     subHeading.innerHTML = backgroundDetails[x].h3;
+
+    //     sliderLink.href = backgroundDetails[x].a;
+
+    //     bgSliderImage.style.backgroundImage = `url(${backgroundDetails[x].image})`;
+        
+    // }
+
+    // setInterval(slider, 2000);
     }
