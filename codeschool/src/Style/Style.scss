@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Philosopher', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: #fff !important;
+}
+  
+::-webkit-scrollbar-track {
+    border: 1px solid #E67E22;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #CB894F;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+@import './landingpage-scss/header'

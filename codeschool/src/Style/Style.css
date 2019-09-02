@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Philosopher&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Philosopher', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #fff !important;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid #E67E22;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CB894F;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+header {
+  background: #E67E22;
+  -webkit-box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  width: 100vw;
+  height: 90px;
+}
+
+header nav {
+  height: 100%;
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo a img {
+  height: 70px;
+  width: auto;
+}
+/*# sourceMappingURL=Style.css.map */
