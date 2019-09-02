@@ -11,6 +11,19 @@ body {
     font-family: 'Philosopher', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background: #fff !important;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 1px solid #E67E22;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #CB894F;
+  }
+
 input:focus {
     outline: none !important;
 }
@@ -233,6 +246,7 @@ header ul li a:hover {
 .header .bg-heading q {
     font-size: 26px;
     padding: 10px 0 20px 0;
+    line-height: 40px;
 }
 
 .header .bg-heading cite {

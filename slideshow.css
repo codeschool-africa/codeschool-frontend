@@ -26,11 +26,11 @@
 .slider-details {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 10%;
     /* bottom: 0;
     right: 0; */
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translate(10%, -50%);
+    text-align: left;
     color: #fff;
     /* animation: img1;
     animation-delay: 0s;
