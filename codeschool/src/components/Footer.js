@@ -29,9 +29,9 @@ export default class Footer extends Component {
                         <div className="col col4">
                             <h3>follow us on</h3>
                             <div className="follow">
-                                <Link to='/'><FaFacebookF className='icon'/></Link>
-                                <Link to='/'><FaTwitter className='icon'/></Link>
-                                <Link to='/'><FaInstagram className='icon'/></Link>
+                                <a href="#"><FaFacebookF className='icon'/></a>
+                                <a href="#"><FaTwitter className='icon'/></a>
+                                <a href="#"><FaInstagram className='icon'/></a>
                             </div>
                             <h3>subscribe to our newsletter</h3>
                             <form>

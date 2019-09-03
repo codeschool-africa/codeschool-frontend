@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+@import '../variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    .register {
+        background: $primaryColor;
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            .logo {
+                img {
+                    height: 100px;
+                }
+            }
+            .form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid rgba($color: #333, $alpha: 0.25);
+                border-radius: 40px;
+                box-shadow: 4px 4px 4px rgba(0, 0, 0, .7);
+                min-width: 60vw;
+                min-height: 80vh;
+                padding: 20px;
+                h1 {
+                    padding-bottom: 20px;
+                }
+                input {
+                    height: 40px;
+                    width: 80%;
+                    margin: 10px 0;
+                    padding-left: 10px;
+                    background: none;
+                    border: 1px solid rgba(0, 0, 0, 1);
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+                    border-radius: 4px;
+                    color: $secondaryColor;
+                    &::placeholder {
+                        color: #000;
+                        transition: all 1s;
+                    }
+                    &:focus {
+                        &::placeholder {
+                            transform: translate(50%, 50%);
+                        }
+                    }
+                    &[type='submit'] {
+                        background: rgba($color: #333, $alpha: 0.25);
+                        cursor: pointer;
+                        font-size: 16px;
+                        border: none;
+                        transition: .5s;
+                        &:hover {
+                            border: 1px solid rgba(0, 0, 0, 1);
+                            background: $primaryColor;
+                        }
+                    }
+                }
+                button {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    margin: 10px 0;
+                }
+                p {
+                    margin: 10px 0;
+                    a {
+                        color: #333;
+                        &:hover {
+                            color: $secondaryColor;
+                        }
+                    }
+                }
+                .btn {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    width: 80%;
+                    button {
+                        margin: 0 15px;
+                        width: 250px;
+                        height: 40px;
+                        cursor: pointer;
+                        box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.25);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        font-size: 18px;
+                        border: none;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        &:hover {
+                            opacity: .8;
+                        }
+                        &:nth-child(1) {
+                            background: #3B5998;
+                            color: #fff;
+                        }
+                        &:nth-child(2) {
+                            background: #fff;
+                        }
+                        .google-icon {
+                            color: rgb(228, 93, 15);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    input {
+        width: 350px;
+        height: 40px;
+        margin: 10px 0;
+        padding-left: 10px;
+        background: none;
+        border: 1px solid rgba(0, 0, 0, 1);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        border-radius: 4px;
+        color: $secondaryColor;
+        &::placeholder {
+            color: #000;
+            transition: all 1s;
+        }
+        &:focus {
+            &::placeholder {
+                transform: translate(50%, 50%);
+            }
+        }
+        &[type='button'] {
+            background: rgba($color: #333, $alpha: 0.25);
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            transition: .5s;
+            &:hover {
+                background: $primaryColor;
+            }
+        }
+    }
+    label {
+        margin: 10px 0;
+    }
+}

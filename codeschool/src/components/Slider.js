@@ -30,7 +30,7 @@ export default class Slides extends Component {
     
     render() {
         return (
-            <Slider autoplay={2500}>
+            <Slider autoplay={4000}>
                 {content.map((item, index) => (
                     <div
                         key={index}

@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Philosopher&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .register {
+  background: #E67E22;
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .register .container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+body .register .container .logo img {
+  height: 100px;
+}
+
+body .register .container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid rgba(51, 51, 51, 0.25);
+  border-radius: 40px;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+  min-width: 60vw;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+body .register .container .form h1 {
+  padding-bottom: 20px;
+}
+
+body .register .container .form input {
+  height: 40px;
+  width: 80%;
+  margin: 10px 0;
+  padding-left: 10px;
+  background: none;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: #000000;
+}
+
+body .register .container .form input::-webkit-input-placeholder {
+  color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .register .container .form input:-ms-input-placeholder {
+  color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .register .container .form input::-ms-input-placeholder {
+  color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .register .container .form input::placeholder {
+  color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .register .container .form input:focus::-webkit-input-placeholder {
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+body .register .container .form input:focus:-ms-input-placeholder {
+  transform: translate(50%, 50%);
+}
+
+body .register .container .form input:focus::-ms-input-placeholder {
+  transform: translate(50%, 50%);
+}
+
+body .register .container .form input:focus::placeholder {
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+body .register .container .form input[type='submit'] {
+  background: rgba(51, 51, 51, 0.25);
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .register .container .form input[type='submit']:hover {
+  border: 1px solid black;
+  background: #E67E22;
+}
+
+body .register .container .form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 10px 0;
+}
+
+body .register .container .form p {
+  margin: 10px 0;
+}
+
+body .register .container .form p a {
+  color: #333;
+}
+
+body .register .container .form p a:hover {
+  color: #000000;
+}
+
+body .register .container .form .btn {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+body .register .container .form .btn button {
+  margin: 0 15px;
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.25);
+          box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+body .register .container .form .btn button:hover {
+  opacity: .8;
+}
+
+body .register .container .form .btn button:nth-child(1) {
+  background: #3B5998;
+  color: #fff;
+}
+
+body .register .container .form .btn button:nth-child(2) {
+  background: #fff;
+}
+
+body .register .container .form .btn button .google-icon {
+  color: #e45d0f;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal input {
+  width: 350px;
+  height: 40px;
+  margin: 10px 0;
+  padding-left: 10px;
+  background: none;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: #000000;
+}
+
+.modal input::-webkit-input-placeholder {
+  color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.modal input:-ms-input-placeholder {
+  color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.modal input::-ms-input-placeholder {
+  color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.modal input::placeholder {
+  color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.modal input:focus::-webkit-input-placeholder {
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.modal input:focus:-ms-input-placeholder {
+  transform: translate(50%, 50%);
+}
+
+.modal input:focus::-ms-input-placeholder {
+  transform: translate(50%, 50%);
+}
+
+.modal input:focus::placeholder {
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.modal input[type='button'] {
+  background: rgba(51, 51, 51, 0.25);
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.modal input[type='button']:hover {
+  background: #E67E22;
+}
+
+.modal label {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=style.css.map */
