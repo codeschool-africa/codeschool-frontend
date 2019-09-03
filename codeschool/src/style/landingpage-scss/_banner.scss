@@ -1,0 +1,47 @@
+.header {
+    position: relative;
+    width: 100vw;
+    // background-image: url('/images/bg-image.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: contain;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .bg-heading {
+        text-align: left;
+        width: 60%;
+        h1 {
+            font-size: 50px;
+            padding: 0 0 20px 0;
+        }
+        p {
+            padding: 10px 0 20px 0;
+            font-size: 24px;
+            a {
+                color: $primaryColor;
+                &:hover {
+                    color: #222;
+                }
+            }
+        }
+        blockquote {
+            font-size: 26px;
+            padding: 10px 0 20px 0;
+            line-height: 40px;
+            .quotes {
+                font-size: 10px;
+                font-weight: 100;
+                margin: 0 5px;
+                margin-bottom: 10px;
+            }
+            footer {
+                font-size: 16px;
+                background: none;
+            }
+        }
+    }
+}

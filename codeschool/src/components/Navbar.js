@@ -30,8 +30,8 @@ export default class Home extends Component {
                     </div>
                     <div className="search-bar">
                         <form>
-                            <input type="text" placeholder="search courses" />
-                            <button><FaSearch></FaSearch></button>
+                            <input type="text" placeholder="search anything" />
+                            <button><FaSearch className="search-icon"></FaSearch></button>
                         </form>
                     </div>
                     <ul>

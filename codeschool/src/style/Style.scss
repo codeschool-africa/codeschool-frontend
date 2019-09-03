@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+@import './variables';
 
 * {
     padding: 0;
@@ -32,4 +33,9 @@ button:focus {
     outline: none !important;
 }
 
-@import './landingpage-scss/header'
+@import './landingpage-scss/header';
+@import './landingpage-scss/banner';
+@import './landingpage-scss/tutorials';
+@import './landingpage-scss/slider';
+@import './landingpage-scss//articles';
+@import './landingpage-scss/footer';
